@@ -56,8 +56,10 @@ namespace AS2122_3G_INF_Prof_ProvaMatrici
         public static void CaricaMatrice(ref int[,] mat)
         {
             Random numRandom = new Random();
-            for (int i = 0; i < mat.GetLength(0); i++)
-                for (int j = 0; j < mat.GetLength(1); j++)
+            int nRighe = mat.GetLength(0);
+            int nColonne = mat.GetLength(1);
+            for (int i = 0; i < nRighe; i++)
+                for (int j = 0; j < nColonne; j++)
                     mat[i, j] = numRandom.Next(MIN_VALUE_MAT, MAX_VALUE_MAT + 1);
 
 
@@ -89,7 +91,15 @@ namespace AS2122_3G_INF_Prof_ProvaMatrici
         /// <param name="mat"></param>
         static void StampaMatrice(int [,] mat)
         {
-
+            int nRighe = mat.GetLength(0);
+            int nColonne = mat.GetLength(1);
+            for (int i = 0; i < nRighe; i++)
+            {
+                Console.WriteLine("");
+                for (int j = 0; j < nColonne; j++)
+                    Console.Write($"{mat[i, j]}\t");
+            }
+            Console.WriteLine("\n");
         }
 
         /// <summary>
@@ -100,7 +110,15 @@ namespace AS2122_3G_INF_Prof_ProvaMatrici
         /// <returns></returns>
         public static int ContaValore(int[,] mat, int valoreDaCercare)
         {
-            return 0;
+            int nRighe = mat.GetLength(0);
+            int nColonne = mat.GetLength(1);
+            int occasioni = 0;
+            for (int i = 0; i < nRighe; i++)
+                for (int j = 0; j < nColonne; j++)
+                    if (valoreDaCercare == mat[i, j])
+                        occasioni += 1;
+            
+            return occasioni;
         }
 
 
@@ -112,7 +130,22 @@ namespace AS2122_3G_INF_Prof_ProvaMatrici
         /// <param name="max"></param>
         public static double CalcolaMinMaxMedio(int[,] mat, ref int min, ref int max)
         {
-            return 0;
+            min = mat[0, 0];
+            max = mat[0, 0];
+            int nRighe = mat.GetLength(0);
+            int nColonne = mat.GetLength(1);
+            int sommaMatrice = 0;
+            for (int i = 0; i < nRighe; i++)
+                for (int j = 0; j < nColonne; j++)
+                {
+                    sommaMatrice += mat[i, j];
+                    if (mat[i, j] > max)
+                        max = mat[i, j];
+                    else if (mat[i, j] < min)
+                        min = mat[i, j];
+                }
+
+            return sommaMatrice / (nRighe * nColonne); //Ritorna il numero medio
         }
     }
 }
