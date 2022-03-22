@@ -55,6 +55,11 @@ namespace AS2122_3G_INF_Prof_ProvaMatrici
         /// <param name="mat"></param>
         public static void CaricaMatrice(ref int[,] mat)
         {
+            Random numRandom = new Random();
+            for (int i = 0; i < mat.GetLength(0); i++)
+                for (int j = 0; j < mat.GetLength(1); j++)
+                    mat[i, j] = numRandom.Next(MIN_VALUE_MAT, MAX_VALUE_MAT + 1);
+
 
         }
 
@@ -95,7 +100,7 @@ namespace AS2122_3G_INF_Prof_ProvaMatrici
         /// <returns></returns>
         public static int ContaValore(int[,] mat, int valoreDaCercare)
         {
-
+            return 0;
         }
 
 
@@ -107,7 +112,7 @@ namespace AS2122_3G_INF_Prof_ProvaMatrici
         /// <param name="max"></param>
         public static double CalcolaMinMaxMedio(int[,] mat, ref int min, ref int max)
         {
-            
+            return 0;
         }
     }
 }
