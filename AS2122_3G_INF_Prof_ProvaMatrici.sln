@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AS2122_3G_INF_Prof_ProvaMatrici", "AS2122_3G_INF_Prof_ProvaMatrici\AS2122_3G_INF_Prof_ProvaMatrici.csproj", "{350292A1-7643-48A7-AEC2-C926504EE8C5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{350292A1-7643-48A7-AEC2-C926504EE8C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{350292A1-7643-48A7-AEC2-C926504EE8C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{350292A1-7643-48A7-AEC2-C926504EE8C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{350292A1-7643-48A7-AEC2-C926504EE8C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E5056E7C-1D65-4BAA-B343-EF5B9946C997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E5056E7C-1D65-4BAA-B343-EF5B9946C997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E5056E7C-1D65-4BAA-B343-EF5B9946C997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E5056E7C-1D65-4BAA-B343-EF5B9946C997}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B52E06F-33BB-48FD-B1EA-E8C5B186F3A3}
+	EndGlobalSection
+EndGlobal
