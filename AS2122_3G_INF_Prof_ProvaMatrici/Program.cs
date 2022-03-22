@@ -80,7 +80,14 @@ namespace AS2122_3G_INF_Prof_ProvaMatrici
         /// <returns></returns>
         public static void InvertiColonne(ref int[,] mat)
         {
-            int[] vetPassaggio = new int[];
+            int nRigheColonne = mat.GetLength(0);
+            int[] vetPassaggio = new int[nRigheColonne];
+            for (int i = 0; i < nRigheColonne; i++)
+                {
+                    vetPassaggio[i] = mat[i, 0];
+                    mat[i, 0] = mat[i, nRigheColonne - 1];
+                    mat[i, nRigheColonne - 1] = vetPassaggio[i];
+                }
         }
 
 
