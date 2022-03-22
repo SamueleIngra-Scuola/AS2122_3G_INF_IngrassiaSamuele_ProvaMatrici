@@ -70,7 +70,7 @@ namespace AS2122_3G_INF_Prof_ProvaMatrici
         /// <param name="mat"></param>
         public static void StampaCornice(int[,] mat)
         {
-
+                
         }
 
         /// <summary>
